@@ -1,0 +1,16 @@
+
+<h1 style="color: white;">Welcome to UZOCHUKWU's shop</h1>
+<button (click)="showProducts()">Show Products</button>
+<!-- <div *ngIf="show">
+  Products are now visible!
+</div> -->
+
+<div *ngIf="show">
+  <div style="color: white;" *ngFor="let product of products">
+    {{product.name}} - ${{product.price}}
+<td><app-stars></app-stars></td>
+
+<!-- <app-product-card [product]="product"></app-product-card> -->
+
+  </div>
+</div>
